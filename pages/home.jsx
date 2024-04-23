@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.scss';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import classNames from 'classnames';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,7 +27,10 @@ export default function Home({}) {
         </div>
 
         <div className={styles.blockContainer}>
-          <div className={styles.uppercase} onClick={() => router.push('/list')}>
+          <div
+            className={classNames(styles.uppercase, styles.active)}
+            onClick={() => router.push('/stats')}
+          >
             Вызов жбо
           </div>
           <div className={styles.uppercase}>технические условия</div>
