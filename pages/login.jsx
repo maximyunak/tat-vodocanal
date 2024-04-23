@@ -21,25 +21,26 @@ export default function Login({}) {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const res = await axios.post('http://89.251.144.134:5001/api/vodokanal/login', {
-        login: login,
-        password: pass,
-      });
-      // localStorage.setItem('accessToken', `Bearer ${res.data.token}`);
-      Cookies.set('accessToken', `Bearer ${res.data.token}`);
-      store.setAuth(true);
-      router.push('/home');
-    } catch (error) {
-      // Обработка ошибки при запросе
-      if (error.response) {
-        // Ошибка при получении ответа с ошибочным статусом (например, 401)
-        setError('Неправильные логин или пароль. Попробуйте снова.');
-      } else {
-        // Ошибка при выполнении запроса
-        setError(`${error}`);
-      }
-    }
+    // try {
+    //   const res = await axios.post('http://89.251.144.134:5001/api/vodokanal/login', {
+    //     login: login,
+    //     password: pass,
+    //   });
+    //   // localStorage.setItem('accessToken', `Bearer ${res.data.token}`);
+    //   Cookies.set('accessToken', `Bearer ${res.data.token}`);
+    //   store.setAuth(true);
+    //   router.push('/home');
+    // } catch (error) {
+    //   // Обработка ошибки при запросе
+    //   if (error.response) {
+    //     // Ошибка при получении ответа с ошибочным статусом (например, 401)
+    //     setError('Неправильные логин или пароль. Попробуйте снова.');
+    //   } else {
+    //     // Ошибка при выполнении запроса
+    //     setError(`${error}`);
+    //   }
+    // }
+    router.push('/home');
   };
   return (
     <div className={styles.container}>
