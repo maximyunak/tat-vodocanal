@@ -1,0 +1,26 @@
+.root {
+  .title {
+    font-size: 34px;
+    font-weight: 600;
+    color: #222b45;
+    margin-bottom: 51px;
+  }
+
+  .info {
+    display: flex;
+    gap: 33px;
+  }
+
+  .button {
+    color: #fff;
+    padding: 9px 13px;
+    background-color: #4a85f6;
+    border-radius: 8px;
+    margin-top: 44px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #5d96ff;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.root {
+  background-color: #fff;
+  width: 296px;
+  height: 134px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 27px 31px 19px;
+
+  .text {
+    width: 140px;
+
+    h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #25396f;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 26px;
+      letter-spacing: 0.93px;
+      color: #6c8db5;
+    }
+  }
+
+  .icon {
+    width: 65px;
+    border-radius: 50%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.red {
+      background-color: #ce490f;
+    }
+
+    &.blue {
+      background-color: #0c76c3;
+    }
+
+    &.green {
+      background-color: #0fa958;
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+}

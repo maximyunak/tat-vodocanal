@@ -1,0 +1,58 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // position: relative;
+
+  .search {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 27px;
+  }
+
+  .input {
+    position: relative;
+    width: 328px;
+  }
+
+  input {
+    background-color: #fff;
+    font-size: 13px;
+    border: 1px solid #eff4fa;
+    padding: 9px 40px 9px 12px;
+    border-radius: 8px;
+    width: 100%;
+
+    &::placeholder {
+      color: #222b45;
+    }
+  }
+
+  .glass {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .accidentButton {
+    background-color: #f24e1e;
+    padding: 16px 25px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 8px;
+    max-height: 49px;
+    margin-left: 9px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #f9673a;
+    }
+  }
+}

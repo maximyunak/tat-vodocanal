@@ -1,0 +1,41 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 27px;
+  }
+  .createbutton {
+    padding: 9px 26px;
+    background-color: #4a85f6;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+  }
+
+  .search {
+    display: flex;
+    gap: 30px;
+  }
+
+  .accidentButton {
+    background-color: #f24e1e;
+    padding: 16px 25px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 8px;
+    max-height: 49px;
+    margin-left: 9px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #f9673a;
+    }
+  }
+}

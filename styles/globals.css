@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans+bold'); */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type='submit'] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+.fc-toolbar-title::after {
+  content: ' числа';
+}
+
+.fc-toolbar-chunk div {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.fc-timegrid-slot-lane {
+  height: 72px !important;
+}
+
+.fc-scroller {
+  overflow: hidden !important; /* Запретить прокрутку внутри календаря */
+}
+
+.fc-scrollgrid-sync-inner {
+  height: 72px !important;
+  display: flex;
+  width: 220px;
+}
+
+:root {
+  --fc-page-bg-color: transparent !important;
+  --fc-event-border-color: transparent !important;
+}
+
+.fc-col-header-cell {
+  background-color: #fff !important;
+}
+
+.fc-day-today {
+  background-color: #eff6ff !important;
+}
+
+/* Дополнительные стили для подсветки выбранной даты (если нужно) */
+.fc-day-selected {
+  background-color: #eff6ff !important;
+}
+
+.fc-bg-event {
+  background-color: #eff6ff !important;
+  border-left: 3px solid #0ea5e9;
+  border-radius: 4px 0 0 4px;
+  opacity: 1 !important;
+}
+
+.fc-event {
+  color: #0369a1 !important;
+}
+
+.fc-timegrid-slot-label {
+  display: none;
+}
+
+/* .fc-prevButton-button,
+.fc-nextButton-button {
+}
+
+.fc-nextButton-button::after {
+  content: 'as';
+} */
+
+/* 
+.fc-button:focus {
+  box-shadow: 0 !important; /* Убираем обводку */
+/* } */
